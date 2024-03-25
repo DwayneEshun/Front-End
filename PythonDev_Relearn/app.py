@@ -54,7 +54,7 @@ print(t.upper())
 
 #While Loops
 #program 4- The guessing game
-secret_number = 7
+'''secret_number = 7
 entered = 0
 limit = 3
 while entered < limit:
@@ -65,4 +65,28 @@ while entered < limit:
         break
     else:
         print("You guessed wrong")
-    
+else:
+    print("Sorry! You Ran out of attempts")
+'''
+
+
+
+
+print("Type 'help' to show car options")
+user_input = ""
+while True:
+    user_input = input(">")
+    if user_input == "start":
+        print("Engine Started") 
+    elif user_input == "stop":
+        print("Engine stopped")
+    elif user_input == "help":
+        print("""
+Start - To start Engine
+Stop - To stop Engine
+Quit - To exit car                          
+""")
+    elif user_input == "quit":
+     break
+    else:
+       print("Sorry I don't understand ")
