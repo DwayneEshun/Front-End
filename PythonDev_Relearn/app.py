@@ -1,5 +1,5 @@
-name  = 'Jennifer'
-print(name[1:-1])
+#name  = 'Jennifer'
+#print(name[1:-1])
 # BUILT IIN METHODS FOR STRINGS
 '''name.upper()
 name.lower()
@@ -75,18 +75,18 @@ else:
 print("Type 'help' to show car options")
 user_input = ""
 while True:
-    user_input = input(">")
-    if user_input == "start":
+    user_input = input(">").upper
+    if user_input == "START":
         print("Engine Started") 
-    elif user_input == "stop":
+    elif user_input == "STOP":
         print("Engine stopped")
-    elif user_input == "help":
+    elif user_input == "HELP":
         print("""
 Start - To start Engine
 Stop - To stop Engine
 Quit - To exit car                          
 """)
-    elif user_input == "quit":
-     break
+    elif user_input == "QUIT":
+        break
     else:
        print("Sorry I don't understand ")
