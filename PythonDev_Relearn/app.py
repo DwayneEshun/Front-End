@@ -69,10 +69,6 @@ else:
     print("Sorry! You Ran out of attempts")
 '''
 
-
-
-
-print("Type 'help' to show car options")
 user_input = ""
 while True:
     user_input = input(">").upper
