@@ -69,18 +69,33 @@ else:
     print("Sorry! You Ran out of attempts")
 '''
 
+
+
+print("Enter 'Help' to show car options!")
 user_input = ""
+started = False
 while True:
-    user_input = input(">").upper
+    user_input = input(">").upper()
     if user_input == "START":
-        print("Engine Started") 
+        if started:
+            print("You started already!")
+        else:
+            started = True
+            print("Engine Started")
     elif user_input == "STOP":
-        print("Engine stopped")
+        if started == True:
+            print("You stopped already")
+        else:
+            started = False
+            print("Engine stopped")
     elif user_input == "HELP":
         print("""
-Start - To start Engine
-Stop - To stop Engine
-Quit - To exit car                          
+Start - Starts The Engine
+Stop - Stops The  Engine
+Quit - Exit the car
 """)
+    elif user_input == "QUIT":
+        break
     else:
-       print("Sorry I don't understand ")
+        print("Sorry I cannot Understand")
+
