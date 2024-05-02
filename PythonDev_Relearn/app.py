@@ -86,7 +86,5 @@ Start - To start Engine
 Stop - To stop Engine
 Quit - To exit car                          
 """)
-    elif user_input == "QUIT":
-        break
     else:
        print("Sorry I don't understand ")
